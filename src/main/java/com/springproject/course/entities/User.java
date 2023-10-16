@@ -15,7 +15,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "tb_user1")
+@Table(name = "TB_User")
 public class User implements Serializable {
 	/**
 	 * 
