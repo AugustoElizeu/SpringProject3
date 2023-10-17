@@ -9,25 +9,25 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springproject.course.entities.User;
-import com.springproject.course.service.UserService;
+import com.springproject.course.entities.Category;
+import com.springproject.course.service.CategoryService;
 
-@RestController //EXPO
-@RequestMapping(value="/users") //EXPO
-public class UserResource {
+@RestController
+@RequestMapping(value="/categories")
+public class CategoryResource {
 	@Autowired
-	private UserService server;
+	private CategoryService server;
 	
-	@GetMapping//EXPO
-	public ResponseEntity<List<User>> findAll(){
-		List<User> list = server.findAll();
-		return ResponseEntity.ok().body(list); //EXPO
+	@GetMapping
+	public ResponseEntity<List<Category>> findAll(){
+		List<Category> list = server.findAll();
+		return ResponseEntity.ok().body(list);
 	}
 	@GetMapping(value="/{id}")
-	public ResponseEntity<User> findById(@PathVariable Long id){
-		User obj = server.findById(id);
+	public ResponseEntity<Category> findById(@PathVariable Long id){
+		Category obj = server.findById(id);
 		return ResponseEntity.ok().body(obj);
+		
 	}
-	
 	
 }

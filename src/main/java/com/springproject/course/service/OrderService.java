@@ -19,7 +19,7 @@ public class OrderService {
 		return ur.findAll();
 	}
 	
-	public Order findById(long id){
+	public Order findById(Long id){
 		Optional<Order> obj = ur.findById(id);
 		return obj.get();
 		

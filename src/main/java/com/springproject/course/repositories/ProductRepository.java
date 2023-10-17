@@ -3,10 +3,10 @@ package com.springproject.course.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.springproject.course.entities.User;
+import com.springproject.course.entities.Product;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface ProductRepository extends JpaRepository<Product, Long> {
 
 	
 
