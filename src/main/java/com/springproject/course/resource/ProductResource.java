@@ -13,7 +13,7 @@ import com.springproject.course.entities.Product;
 import com.springproject.course.service.ProductService;
 
 @RestController //EXPO
-@RequestMapping(value="/Products") //EXPO
+@RequestMapping(value="/products") //EXPO
 public class ProductResource {
 	@Autowired
 	private ProductService server;
